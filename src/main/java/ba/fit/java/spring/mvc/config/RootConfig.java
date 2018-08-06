@@ -5,4 +5,5 @@ import org.springframework.context.annotation.Configuration;
 
 @ComponentScan({ "ba.fit.java.spring.mvc" })
 public class RootConfig {
+    //
 }

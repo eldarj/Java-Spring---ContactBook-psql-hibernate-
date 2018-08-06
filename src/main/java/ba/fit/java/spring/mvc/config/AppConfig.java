@@ -9,7 +9,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 @Configuration
 @SpringBootApplication
-@ComponentScan(basePackages = "ba.fit.java.spring.mvc")
+@ComponentScan(basePackages = "ba.fit.java.spring.mvc") // Set base package for all components
 public class AppConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     public static void main(String[] args) {
@@ -19,15 +19,15 @@ public class AppConfig extends AbstractAnnotationConfigDispatcherServletInitiali
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[] { RootConfig.class};
-    }
+    } // define root config
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class[]{MvcConfig.class};
-    }
+    } // define mvcconfig
 
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
-    }
+    } // map servlet /controllers to this
 }

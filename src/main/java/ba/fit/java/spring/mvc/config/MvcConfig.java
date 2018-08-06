@@ -14,6 +14,10 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @ComponentScan(basePackages = "ba.fit.java.spring.mvc")
 public class MvcConfig implements WebMvcConfigurer {
+
+    /**
+     * Define a bean for resolving views
+     */
     @Bean
     public ViewResolver viewResolver()
     {
@@ -25,6 +29,9 @@ public class MvcConfig implements WebMvcConfigurer {
         return viewResolver;
     }
 
+    /**
+     * Define where all static content (webapp) is located
+     */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry)
     {
