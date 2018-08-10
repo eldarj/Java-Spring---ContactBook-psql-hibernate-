@@ -1,13 +1,16 @@
-package entitymodels;
+package ba.fit.java.spring.mvc.entitymodels;
 
 import org.hibernate.annotations.Cascade;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Nastavnik
 {
-    @Id
+    @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int Id ;
 

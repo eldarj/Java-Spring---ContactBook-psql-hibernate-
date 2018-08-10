@@ -1,6 +1,6 @@
-package ba.fit.java.spring.mvc;
+package ba.fit.java.spring.mvc.dao;
 
-import entitymodels.*;
+import ba.fit.java.spring.mvc.entitymodels.*;
 
 import javax.persistence.EntityManager;
 import java.util.ArrayList;

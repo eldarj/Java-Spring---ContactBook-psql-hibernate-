@@ -1,4 +1,4 @@
-package entitymodels;
+package ba.fit.java.spring.mvc.entitymodels;
 
 import javax.persistence.*;
 
